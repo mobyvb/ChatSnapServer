@@ -1,27 +1,28 @@
 ///
 //  Generated code. Do not modify.
+//  source: google/protobuf/type.proto
 ///
-// ignore_for_file: non_constant_identifier_names,library_prefixes
+// ignore_for_file: non_constant_identifier_names,library_prefixes,unused_import
 
 // ignore: UNUSED_SHOWN_NAME
-import 'dart:core' show int, bool, double, String, List, override;
+import 'dart:core' show int, bool, double, String, List, Map, override;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'source_context.pb.dart';
-import 'any.pb.dart';
+import 'source_context.pb.dart' as $0;
+import 'any.pb.dart' as $1;
 
 import 'type.pbenum.dart';
 
 export 'type.pbenum.dart';
 
 class Type extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Type')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Type', package: const $pb.PackageName('google.protobuf'))
     ..aOS(1, 'name')
     ..pp<Field>(2, 'fields', $pb.PbFieldType.PM, Field.$checkItem, Field.create)
     ..pPS(3, 'oneofs')
     ..pp<Option>(4, 'options', $pb.PbFieldType.PM, Option.$checkItem, Option.create)
-    ..a<SourceContext>(5, 'sourceContext', $pb.PbFieldType.OM, SourceContext.getDefault, SourceContext.create)
+    ..a<$0.SourceContext>(5, 'sourceContext', $pb.PbFieldType.OM, $0.SourceContext.getDefault, $0.SourceContext.create)
     ..e<Syntax>(6, 'syntax', $pb.PbFieldType.OE, Syntax.SYNTAX_PROTO2, Syntax.valueOf, Syntax.values)
     ..hasRequiredFields = false
   ;
@@ -30,16 +31,14 @@ class Type extends $pb.GeneratedMessage {
   Type.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Type.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Type clone() => new Type()..mergeFromMessage(this);
+  Type copyWith(void Function(Type) updates) => super.copyWith((message) => updates(message as Type));
   $pb.BuilderInfo get info_ => _i;
   static Type create() => new Type();
   static $pb.PbList<Type> createRepeated() => new $pb.PbList<Type>();
-  static Type getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyType();
-    return _defaultInstance;
-  }
+  static Type getDefault() => _defaultInstance ??= create()..freeze();
   static Type _defaultInstance;
   static void $checkItem(Type v) {
-    if (v is! Type) $pb.checkItemFailed(v, 'Type');
+    if (v is! Type) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   String get name => $_getS(0, '');
@@ -53,8 +52,8 @@ class Type extends $pb.GeneratedMessage {
 
   List<Option> get options => $_getList(3);
 
-  SourceContext get sourceContext => $_getN(4);
-  set sourceContext(SourceContext v) { setField(5, v); }
+  $0.SourceContext get sourceContext => $_getN(4);
+  set sourceContext($0.SourceContext v) { setField(5, v); }
   bool hasSourceContext() => $_has(4);
   void clearSourceContext() => clearField(5);
 
@@ -64,10 +63,8 @@ class Type extends $pb.GeneratedMessage {
   void clearSyntax() => clearField(6);
 }
 
-class _ReadonlyType extends Type with $pb.ReadonlyMessageMixin {}
-
 class Field extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Field')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Field', package: const $pb.PackageName('google.protobuf'))
     ..e<Field_Kind>(1, 'kind', $pb.PbFieldType.OE, Field_Kind.TYPE_UNKNOWN, Field_Kind.valueOf, Field_Kind.values)
     ..e<Field_Cardinality>(2, 'cardinality', $pb.PbFieldType.OE, Field_Cardinality.CARDINALITY_UNKNOWN, Field_Cardinality.valueOf, Field_Cardinality.values)
     ..a<int>(3, 'number', $pb.PbFieldType.O3)
@@ -85,16 +82,14 @@ class Field extends $pb.GeneratedMessage {
   Field.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Field.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Field clone() => new Field()..mergeFromMessage(this);
+  Field copyWith(void Function(Field) updates) => super.copyWith((message) => updates(message as Field));
   $pb.BuilderInfo get info_ => _i;
   static Field create() => new Field();
   static $pb.PbList<Field> createRepeated() => new $pb.PbList<Field>();
-  static Field getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyField();
-    return _defaultInstance;
-  }
+  static Field getDefault() => _defaultInstance ??= create()..freeze();
   static Field _defaultInstance;
   static void $checkItem(Field v) {
-    if (v is! Field) $pb.checkItemFailed(v, 'Field');
+    if (v is! Field) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   Field_Kind get kind => $_getN(0);
@@ -145,14 +140,12 @@ class Field extends $pb.GeneratedMessage {
   void clearDefaultValue() => clearField(11);
 }
 
-class _ReadonlyField extends Field with $pb.ReadonlyMessageMixin {}
-
 class Enum extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Enum')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Enum', package: const $pb.PackageName('google.protobuf'))
     ..aOS(1, 'name')
     ..pp<EnumValue>(2, 'enumvalue', $pb.PbFieldType.PM, EnumValue.$checkItem, EnumValue.create)
     ..pp<Option>(3, 'options', $pb.PbFieldType.PM, Option.$checkItem, Option.create)
-    ..a<SourceContext>(4, 'sourceContext', $pb.PbFieldType.OM, SourceContext.getDefault, SourceContext.create)
+    ..a<$0.SourceContext>(4, 'sourceContext', $pb.PbFieldType.OM, $0.SourceContext.getDefault, $0.SourceContext.create)
     ..e<Syntax>(5, 'syntax', $pb.PbFieldType.OE, Syntax.SYNTAX_PROTO2, Syntax.valueOf, Syntax.values)
     ..hasRequiredFields = false
   ;
@@ -161,16 +154,14 @@ class Enum extends $pb.GeneratedMessage {
   Enum.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Enum.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Enum clone() => new Enum()..mergeFromMessage(this);
+  Enum copyWith(void Function(Enum) updates) => super.copyWith((message) => updates(message as Enum));
   $pb.BuilderInfo get info_ => _i;
   static Enum create() => new Enum();
   static $pb.PbList<Enum> createRepeated() => new $pb.PbList<Enum>();
-  static Enum getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyEnum();
-    return _defaultInstance;
-  }
+  static Enum getDefault() => _defaultInstance ??= create()..freeze();
   static Enum _defaultInstance;
   static void $checkItem(Enum v) {
-    if (v is! Enum) $pb.checkItemFailed(v, 'Enum');
+    if (v is! Enum) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   String get name => $_getS(0, '');
@@ -182,8 +173,8 @@ class Enum extends $pb.GeneratedMessage {
 
   List<Option> get options => $_getList(2);
 
-  SourceContext get sourceContext => $_getN(3);
-  set sourceContext(SourceContext v) { setField(4, v); }
+  $0.SourceContext get sourceContext => $_getN(3);
+  set sourceContext($0.SourceContext v) { setField(4, v); }
   bool hasSourceContext() => $_has(3);
   void clearSourceContext() => clearField(4);
 
@@ -193,10 +184,8 @@ class Enum extends $pb.GeneratedMessage {
   void clearSyntax() => clearField(5);
 }
 
-class _ReadonlyEnum extends Enum with $pb.ReadonlyMessageMixin {}
-
 class EnumValue extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('EnumValue')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('EnumValue', package: const $pb.PackageName('google.protobuf'))
     ..aOS(1, 'name')
     ..a<int>(2, 'number', $pb.PbFieldType.O3)
     ..pp<Option>(3, 'options', $pb.PbFieldType.PM, Option.$checkItem, Option.create)
@@ -207,16 +196,14 @@ class EnumValue extends $pb.GeneratedMessage {
   EnumValue.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   EnumValue.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   EnumValue clone() => new EnumValue()..mergeFromMessage(this);
+  EnumValue copyWith(void Function(EnumValue) updates) => super.copyWith((message) => updates(message as EnumValue));
   $pb.BuilderInfo get info_ => _i;
   static EnumValue create() => new EnumValue();
   static $pb.PbList<EnumValue> createRepeated() => new $pb.PbList<EnumValue>();
-  static EnumValue getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyEnumValue();
-    return _defaultInstance;
-  }
+  static EnumValue getDefault() => _defaultInstance ??= create()..freeze();
   static EnumValue _defaultInstance;
   static void $checkItem(EnumValue v) {
-    if (v is! EnumValue) $pb.checkItemFailed(v, 'EnumValue');
+    if (v is! EnumValue) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   String get name => $_getS(0, '');
@@ -232,12 +219,10 @@ class EnumValue extends $pb.GeneratedMessage {
   List<Option> get options => $_getList(2);
 }
 
-class _ReadonlyEnumValue extends EnumValue with $pb.ReadonlyMessageMixin {}
-
 class Option extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Option')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Option', package: const $pb.PackageName('google.protobuf'))
     ..aOS(1, 'name')
-    ..a<Any>(2, 'value', $pb.PbFieldType.OM, Any.getDefault, Any.create)
+    ..a<$1.Any>(2, 'value', $pb.PbFieldType.OM, $1.Any.getDefault, $1.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -245,16 +230,14 @@ class Option extends $pb.GeneratedMessage {
   Option.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Option.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Option clone() => new Option()..mergeFromMessage(this);
+  Option copyWith(void Function(Option) updates) => super.copyWith((message) => updates(message as Option));
   $pb.BuilderInfo get info_ => _i;
   static Option create() => new Option();
   static $pb.PbList<Option> createRepeated() => new $pb.PbList<Option>();
-  static Option getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyOption();
-    return _defaultInstance;
-  }
+  static Option getDefault() => _defaultInstance ??= create()..freeze();
   static Option _defaultInstance;
   static void $checkItem(Option v) {
-    if (v is! Option) $pb.checkItemFailed(v, 'Option');
+    if (v is! Option) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   String get name => $_getS(0, '');
@@ -262,11 +245,9 @@ class Option extends $pb.GeneratedMessage {
   bool hasName() => $_has(0);
   void clearName() => clearField(1);
 
-  Any get value => $_getN(1);
-  set value(Any v) { setField(2, v); }
+  $1.Any get value => $_getN(1);
+  set value($1.Any v) { setField(2, v); }
   bool hasValue() => $_has(1);
   void clearValue() => clearField(2);
 }
-
-class _ReadonlyOption extends Option with $pb.ReadonlyMessageMixin {}
 

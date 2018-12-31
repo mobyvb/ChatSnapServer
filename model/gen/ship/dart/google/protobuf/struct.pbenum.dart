@@ -1,7 +1,8 @@
 ///
 //  Generated code. Do not modify.
+//  source: google/protobuf/struct.proto
 ///
-// ignore_for_file: non_constant_identifier_names,library_prefixes
+// ignore_for_file: non_constant_identifier_names,library_prefixes,unused_import
 
 // ignore_for_file: UNDEFINED_SHOWN_NAME,UNUSED_SHOWN_NAME
 import 'dart:core' show int, dynamic, String, List, Map;
@@ -14,8 +15,8 @@ class NullValue extends $pb.ProtobufEnum {
     NULL_VALUE,
   ];
 
-  static final Map<int, dynamic> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static NullValue valueOf(int value) => _byValue[value] as NullValue;
+  static final Map<int, NullValue> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static NullValue valueOf(int value) => _byValue[value];
   static void $checkItem(NullValue v) {
     if (v is! NullValue) $pb.checkItemFailed(v, 'NullValue');
   }

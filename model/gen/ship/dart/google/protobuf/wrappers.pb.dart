@@ -1,16 +1,17 @@
 ///
 //  Generated code. Do not modify.
+//  source: google/protobuf/wrappers.proto
 ///
-// ignore_for_file: non_constant_identifier_names,library_prefixes
+// ignore_for_file: non_constant_identifier_names,library_prefixes,unused_import
 
 // ignore: UNUSED_SHOWN_NAME
-import 'dart:core' show int, bool, double, String, List, override;
+import 'dart:core' show int, bool, double, String, List, Map, override;
 
 import 'package:fixnum/fixnum.dart';
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class DoubleValue extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('DoubleValue')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('DoubleValue', package: const $pb.PackageName('google.protobuf'))
     ..a<double>(1, 'value', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -19,16 +20,14 @@ class DoubleValue extends $pb.GeneratedMessage {
   DoubleValue.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   DoubleValue.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   DoubleValue clone() => new DoubleValue()..mergeFromMessage(this);
+  DoubleValue copyWith(void Function(DoubleValue) updates) => super.copyWith((message) => updates(message as DoubleValue));
   $pb.BuilderInfo get info_ => _i;
   static DoubleValue create() => new DoubleValue();
   static $pb.PbList<DoubleValue> createRepeated() => new $pb.PbList<DoubleValue>();
-  static DoubleValue getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyDoubleValue();
-    return _defaultInstance;
-  }
+  static DoubleValue getDefault() => _defaultInstance ??= create()..freeze();
   static DoubleValue _defaultInstance;
   static void $checkItem(DoubleValue v) {
-    if (v is! DoubleValue) $pb.checkItemFailed(v, 'DoubleValue');
+    if (v is! DoubleValue) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   double get value => $_getN(0);
@@ -37,10 +36,8 @@ class DoubleValue extends $pb.GeneratedMessage {
   void clearValue() => clearField(1);
 }
 
-class _ReadonlyDoubleValue extends DoubleValue with $pb.ReadonlyMessageMixin {}
-
 class FloatValue extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('FloatValue')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('FloatValue', package: const $pb.PackageName('google.protobuf'))
     ..a<double>(1, 'value', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -49,16 +46,14 @@ class FloatValue extends $pb.GeneratedMessage {
   FloatValue.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   FloatValue.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   FloatValue clone() => new FloatValue()..mergeFromMessage(this);
+  FloatValue copyWith(void Function(FloatValue) updates) => super.copyWith((message) => updates(message as FloatValue));
   $pb.BuilderInfo get info_ => _i;
   static FloatValue create() => new FloatValue();
   static $pb.PbList<FloatValue> createRepeated() => new $pb.PbList<FloatValue>();
-  static FloatValue getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyFloatValue();
-    return _defaultInstance;
-  }
+  static FloatValue getDefault() => _defaultInstance ??= create()..freeze();
   static FloatValue _defaultInstance;
   static void $checkItem(FloatValue v) {
-    if (v is! FloatValue) $pb.checkItemFailed(v, 'FloatValue');
+    if (v is! FloatValue) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   double get value => $_getN(0);
@@ -67,10 +62,8 @@ class FloatValue extends $pb.GeneratedMessage {
   void clearValue() => clearField(1);
 }
 
-class _ReadonlyFloatValue extends FloatValue with $pb.ReadonlyMessageMixin {}
-
 class Int64Value extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Int64Value')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Int64Value', package: const $pb.PackageName('google.protobuf'))
     ..aInt64(1, 'value')
     ..hasRequiredFields = false
   ;
@@ -79,16 +72,14 @@ class Int64Value extends $pb.GeneratedMessage {
   Int64Value.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Int64Value.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Int64Value clone() => new Int64Value()..mergeFromMessage(this);
+  Int64Value copyWith(void Function(Int64Value) updates) => super.copyWith((message) => updates(message as Int64Value));
   $pb.BuilderInfo get info_ => _i;
   static Int64Value create() => new Int64Value();
   static $pb.PbList<Int64Value> createRepeated() => new $pb.PbList<Int64Value>();
-  static Int64Value getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyInt64Value();
-    return _defaultInstance;
-  }
+  static Int64Value getDefault() => _defaultInstance ??= create()..freeze();
   static Int64Value _defaultInstance;
   static void $checkItem(Int64Value v) {
-    if (v is! Int64Value) $pb.checkItemFailed(v, 'Int64Value');
+    if (v is! Int64Value) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   Int64 get value => $_getI64(0);
@@ -97,10 +88,8 @@ class Int64Value extends $pb.GeneratedMessage {
   void clearValue() => clearField(1);
 }
 
-class _ReadonlyInt64Value extends Int64Value with $pb.ReadonlyMessageMixin {}
-
 class UInt64Value extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('UInt64Value')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('UInt64Value', package: const $pb.PackageName('google.protobuf'))
     ..a<Int64>(1, 'value', $pb.PbFieldType.OU6, Int64.ZERO)
     ..hasRequiredFields = false
   ;
@@ -109,16 +98,14 @@ class UInt64Value extends $pb.GeneratedMessage {
   UInt64Value.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   UInt64Value.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   UInt64Value clone() => new UInt64Value()..mergeFromMessage(this);
+  UInt64Value copyWith(void Function(UInt64Value) updates) => super.copyWith((message) => updates(message as UInt64Value));
   $pb.BuilderInfo get info_ => _i;
   static UInt64Value create() => new UInt64Value();
   static $pb.PbList<UInt64Value> createRepeated() => new $pb.PbList<UInt64Value>();
-  static UInt64Value getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyUInt64Value();
-    return _defaultInstance;
-  }
+  static UInt64Value getDefault() => _defaultInstance ??= create()..freeze();
   static UInt64Value _defaultInstance;
   static void $checkItem(UInt64Value v) {
-    if (v is! UInt64Value) $pb.checkItemFailed(v, 'UInt64Value');
+    if (v is! UInt64Value) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   Int64 get value => $_getI64(0);
@@ -127,10 +114,8 @@ class UInt64Value extends $pb.GeneratedMessage {
   void clearValue() => clearField(1);
 }
 
-class _ReadonlyUInt64Value extends UInt64Value with $pb.ReadonlyMessageMixin {}
-
 class Int32Value extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Int32Value')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Int32Value', package: const $pb.PackageName('google.protobuf'))
     ..a<int>(1, 'value', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -139,16 +124,14 @@ class Int32Value extends $pb.GeneratedMessage {
   Int32Value.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Int32Value.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Int32Value clone() => new Int32Value()..mergeFromMessage(this);
+  Int32Value copyWith(void Function(Int32Value) updates) => super.copyWith((message) => updates(message as Int32Value));
   $pb.BuilderInfo get info_ => _i;
   static Int32Value create() => new Int32Value();
   static $pb.PbList<Int32Value> createRepeated() => new $pb.PbList<Int32Value>();
-  static Int32Value getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyInt32Value();
-    return _defaultInstance;
-  }
+  static Int32Value getDefault() => _defaultInstance ??= create()..freeze();
   static Int32Value _defaultInstance;
   static void $checkItem(Int32Value v) {
-    if (v is! Int32Value) $pb.checkItemFailed(v, 'Int32Value');
+    if (v is! Int32Value) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   int get value => $_get(0, 0);
@@ -157,10 +140,8 @@ class Int32Value extends $pb.GeneratedMessage {
   void clearValue() => clearField(1);
 }
 
-class _ReadonlyInt32Value extends Int32Value with $pb.ReadonlyMessageMixin {}
-
 class UInt32Value extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('UInt32Value')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('UInt32Value', package: const $pb.PackageName('google.protobuf'))
     ..a<int>(1, 'value', $pb.PbFieldType.OU3)
     ..hasRequiredFields = false
   ;
@@ -169,16 +150,14 @@ class UInt32Value extends $pb.GeneratedMessage {
   UInt32Value.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   UInt32Value.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   UInt32Value clone() => new UInt32Value()..mergeFromMessage(this);
+  UInt32Value copyWith(void Function(UInt32Value) updates) => super.copyWith((message) => updates(message as UInt32Value));
   $pb.BuilderInfo get info_ => _i;
   static UInt32Value create() => new UInt32Value();
   static $pb.PbList<UInt32Value> createRepeated() => new $pb.PbList<UInt32Value>();
-  static UInt32Value getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyUInt32Value();
-    return _defaultInstance;
-  }
+  static UInt32Value getDefault() => _defaultInstance ??= create()..freeze();
   static UInt32Value _defaultInstance;
   static void $checkItem(UInt32Value v) {
-    if (v is! UInt32Value) $pb.checkItemFailed(v, 'UInt32Value');
+    if (v is! UInt32Value) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   int get value => $_get(0, 0);
@@ -187,10 +166,8 @@ class UInt32Value extends $pb.GeneratedMessage {
   void clearValue() => clearField(1);
 }
 
-class _ReadonlyUInt32Value extends UInt32Value with $pb.ReadonlyMessageMixin {}
-
 class BoolValue extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('BoolValue')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('BoolValue', package: const $pb.PackageName('google.protobuf'))
     ..aOB(1, 'value')
     ..hasRequiredFields = false
   ;
@@ -199,16 +176,14 @@ class BoolValue extends $pb.GeneratedMessage {
   BoolValue.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   BoolValue.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   BoolValue clone() => new BoolValue()..mergeFromMessage(this);
+  BoolValue copyWith(void Function(BoolValue) updates) => super.copyWith((message) => updates(message as BoolValue));
   $pb.BuilderInfo get info_ => _i;
   static BoolValue create() => new BoolValue();
   static $pb.PbList<BoolValue> createRepeated() => new $pb.PbList<BoolValue>();
-  static BoolValue getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyBoolValue();
-    return _defaultInstance;
-  }
+  static BoolValue getDefault() => _defaultInstance ??= create()..freeze();
   static BoolValue _defaultInstance;
   static void $checkItem(BoolValue v) {
-    if (v is! BoolValue) $pb.checkItemFailed(v, 'BoolValue');
+    if (v is! BoolValue) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   bool get value => $_get(0, false);
@@ -217,10 +192,8 @@ class BoolValue extends $pb.GeneratedMessage {
   void clearValue() => clearField(1);
 }
 
-class _ReadonlyBoolValue extends BoolValue with $pb.ReadonlyMessageMixin {}
-
 class StringValue extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('StringValue')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('StringValue', package: const $pb.PackageName('google.protobuf'))
     ..aOS(1, 'value')
     ..hasRequiredFields = false
   ;
@@ -229,16 +202,14 @@ class StringValue extends $pb.GeneratedMessage {
   StringValue.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   StringValue.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   StringValue clone() => new StringValue()..mergeFromMessage(this);
+  StringValue copyWith(void Function(StringValue) updates) => super.copyWith((message) => updates(message as StringValue));
   $pb.BuilderInfo get info_ => _i;
   static StringValue create() => new StringValue();
   static $pb.PbList<StringValue> createRepeated() => new $pb.PbList<StringValue>();
-  static StringValue getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyStringValue();
-    return _defaultInstance;
-  }
+  static StringValue getDefault() => _defaultInstance ??= create()..freeze();
   static StringValue _defaultInstance;
   static void $checkItem(StringValue v) {
-    if (v is! StringValue) $pb.checkItemFailed(v, 'StringValue');
+    if (v is! StringValue) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   String get value => $_getS(0, '');
@@ -247,10 +218,8 @@ class StringValue extends $pb.GeneratedMessage {
   void clearValue() => clearField(1);
 }
 
-class _ReadonlyStringValue extends StringValue with $pb.ReadonlyMessageMixin {}
-
 class BytesValue extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('BytesValue')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('BytesValue', package: const $pb.PackageName('google.protobuf'))
     ..a<List<int>>(1, 'value', $pb.PbFieldType.OY)
     ..hasRequiredFields = false
   ;
@@ -259,16 +228,14 @@ class BytesValue extends $pb.GeneratedMessage {
   BytesValue.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   BytesValue.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   BytesValue clone() => new BytesValue()..mergeFromMessage(this);
+  BytesValue copyWith(void Function(BytesValue) updates) => super.copyWith((message) => updates(message as BytesValue));
   $pb.BuilderInfo get info_ => _i;
   static BytesValue create() => new BytesValue();
   static $pb.PbList<BytesValue> createRepeated() => new $pb.PbList<BytesValue>();
-  static BytesValue getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyBytesValue();
-    return _defaultInstance;
-  }
+  static BytesValue getDefault() => _defaultInstance ??= create()..freeze();
   static BytesValue _defaultInstance;
   static void $checkItem(BytesValue v) {
-    if (v is! BytesValue) $pb.checkItemFailed(v, 'BytesValue');
+    if (v is! BytesValue) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   List<int> get value => $_getN(0);
@@ -276,6 +243,4 @@ class BytesValue extends $pb.GeneratedMessage {
   bool hasValue() => $_has(0);
   void clearValue() => clearField(1);
 }
-
-class _ReadonlyBytesValue extends BytesValue with $pb.ReadonlyMessageMixin {}
 

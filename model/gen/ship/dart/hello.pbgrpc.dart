@@ -1,29 +1,30 @@
 ///
 //  Generated code. Do not modify.
+//  source: hello.proto
 ///
-// ignore_for_file: non_constant_identifier_names,library_prefixes
+// ignore_for_file: non_constant_identifier_names,library_prefixes,unused_import
 
-import 'dart:async';
+import 'dart:async' as $async;
 
 import 'package:grpc/grpc.dart';
 
-import 'google/protobuf/Empty.pb.dart' as $google$protobuf;
+import 'google/protobuf/Empty.pb.dart' as $0;
 import 'hello.pb.dart';
 export 'hello.pb.dart';
 
 class HelloServiceClient extends Client {
-  static final _$sayHello =
-      new ClientMethod<$google$protobuf.Empty, ResponseHello>(
-          '/model.HelloService/SayHello',
-          ($google$protobuf.Empty value) => value.writeToBuffer(),
-          (List<int> value) => new ResponseHello.fromBuffer(value));
+  static final _$sayHello = new ClientMethod<$0.Empty, ResponseHello>(
+      '/model.HelloService/SayHello',
+      ($0.Empty value) => value.writeToBuffer(),
+      (List<int> value) => new ResponseHello.fromBuffer(value));
 
   HelloServiceClient(ClientChannel channel, {CallOptions options})
       : super(channel, options: options);
 
-  ResponseFuture<ResponseHello> sayHello($google$protobuf.Empty request,
+  ResponseFuture<ResponseHello> sayHello($0.Empty request,
       {CallOptions options}) {
-    final call = $createCall(_$sayHello, new Stream.fromIterable([request]),
+    final call = $createCall(
+        _$sayHello, new $async.Stream.fromIterable([request]),
         options: options);
     return new ResponseFuture(call);
   }
@@ -33,19 +34,19 @@ abstract class HelloServiceBase extends Service {
   String get $name => 'model.HelloService';
 
   HelloServiceBase() {
-    $addMethod(new ServiceMethod<$google$protobuf.Empty, ResponseHello>(
+    $addMethod(new ServiceMethod<$0.Empty, ResponseHello>(
         'SayHello',
         sayHello_Pre,
         false,
         false,
-        (List<int> value) => new $google$protobuf.Empty.fromBuffer(value),
+        (List<int> value) => new $0.Empty.fromBuffer(value),
         (ResponseHello value) => value.writeToBuffer()));
   }
 
-  Future<ResponseHello> sayHello_Pre(ServiceCall call, Future request) async {
+  $async.Future<ResponseHello> sayHello_Pre(
+      ServiceCall call, $async.Future request) async {
     return sayHello(call, await request);
   }
 
-  Future<ResponseHello> sayHello(
-      ServiceCall call, $google$protobuf.Empty request);
+  $async.Future<ResponseHello> sayHello(ServiceCall call, $0.Empty request);
 }

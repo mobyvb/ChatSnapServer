@@ -1,10 +1,11 @@
 ///
 //  Generated code. Do not modify.
+//  source: google/protobuf/struct.proto
 ///
-// ignore_for_file: non_constant_identifier_names,library_prefixes
+// ignore_for_file: non_constant_identifier_names,library_prefixes,unused_import
 
 // ignore: UNUSED_SHOWN_NAME
-import 'dart:core' show int, bool, double, String, List, override;
+import 'dart:core' show int, bool, double, String, List, Map, override;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
@@ -12,45 +13,9 @@ import 'struct.pbenum.dart';
 
 export 'struct.pbenum.dart';
 
-class Struct_FieldsEntry extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Struct_FieldsEntry')
-    ..aOS(1, 'key')
-    ..a<Value>(2, 'value', $pb.PbFieldType.OM, Value.getDefault, Value.create)
-    ..hasRequiredFields = false
-  ;
-
-  Struct_FieldsEntry() : super();
-  Struct_FieldsEntry.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
-  Struct_FieldsEntry.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
-  Struct_FieldsEntry clone() => new Struct_FieldsEntry()..mergeFromMessage(this);
-  $pb.BuilderInfo get info_ => _i;
-  static Struct_FieldsEntry create() => new Struct_FieldsEntry();
-  static $pb.PbList<Struct_FieldsEntry> createRepeated() => new $pb.PbList<Struct_FieldsEntry>();
-  static Struct_FieldsEntry getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyStruct_FieldsEntry();
-    return _defaultInstance;
-  }
-  static Struct_FieldsEntry _defaultInstance;
-  static void $checkItem(Struct_FieldsEntry v) {
-    if (v is! Struct_FieldsEntry) $pb.checkItemFailed(v, 'Struct_FieldsEntry');
-  }
-
-  String get key => $_getS(0, '');
-  set key(String v) { $_setString(0, v); }
-  bool hasKey() => $_has(0);
-  void clearKey() => clearField(1);
-
-  Value get value => $_getN(1);
-  set value(Value v) { setField(2, v); }
-  bool hasValue() => $_has(1);
-  void clearValue() => clearField(2);
-}
-
-class _ReadonlyStruct_FieldsEntry extends Struct_FieldsEntry with $pb.ReadonlyMessageMixin {}
-
 class Struct extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Struct')
-    ..pp<Struct_FieldsEntry>(1, 'fields', $pb.PbFieldType.PM, Struct_FieldsEntry.$checkItem, Struct_FieldsEntry.create)
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Struct', package: const $pb.PackageName('google.protobuf'))
+    ..m<String, Value>(1, 'fields', $pb.PbFieldType.OS, $pb.PbFieldType.OM, Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -58,25 +23,21 @@ class Struct extends $pb.GeneratedMessage {
   Struct.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Struct.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Struct clone() => new Struct()..mergeFromMessage(this);
+  Struct copyWith(void Function(Struct) updates) => super.copyWith((message) => updates(message as Struct));
   $pb.BuilderInfo get info_ => _i;
   static Struct create() => new Struct();
   static $pb.PbList<Struct> createRepeated() => new $pb.PbList<Struct>();
-  static Struct getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyStruct();
-    return _defaultInstance;
-  }
+  static Struct getDefault() => _defaultInstance ??= create()..freeze();
   static Struct _defaultInstance;
   static void $checkItem(Struct v) {
-    if (v is! Struct) $pb.checkItemFailed(v, 'Struct');
+    if (v is! Struct) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
-  List<Struct_FieldsEntry> get fields => $_getList(0);
+  Map<String, Value> get fields => $_getMap(0);
 }
 
-class _ReadonlyStruct extends Struct with $pb.ReadonlyMessageMixin {}
-
 class Value extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Value')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Value', package: const $pb.PackageName('google.protobuf'))
     ..e<NullValue>(1, 'nullValue', $pb.PbFieldType.OE, NullValue.NULL_VALUE, NullValue.valueOf, NullValue.values)
     ..a<double>(2, 'numberValue', $pb.PbFieldType.OD)
     ..aOS(3, 'stringValue')
@@ -90,16 +51,14 @@ class Value extends $pb.GeneratedMessage {
   Value.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Value.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Value clone() => new Value()..mergeFromMessage(this);
+  Value copyWith(void Function(Value) updates) => super.copyWith((message) => updates(message as Value));
   $pb.BuilderInfo get info_ => _i;
   static Value create() => new Value();
   static $pb.PbList<Value> createRepeated() => new $pb.PbList<Value>();
-  static Value getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyValue();
-    return _defaultInstance;
-  }
+  static Value getDefault() => _defaultInstance ??= create()..freeze();
   static Value _defaultInstance;
   static void $checkItem(Value v) {
-    if (v is! Value) $pb.checkItemFailed(v, 'Value');
+    if (v is! Value) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   NullValue get nullValue => $_getN(0);
@@ -133,10 +92,8 @@ class Value extends $pb.GeneratedMessage {
   void clearListValue() => clearField(6);
 }
 
-class _ReadonlyValue extends Value with $pb.ReadonlyMessageMixin {}
-
 class ListValue extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('ListValue')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('ListValue', package: const $pb.PackageName('google.protobuf'))
     ..pp<Value>(1, 'values', $pb.PbFieldType.PM, Value.$checkItem, Value.create)
     ..hasRequiredFields = false
   ;
@@ -145,20 +102,16 @@ class ListValue extends $pb.GeneratedMessage {
   ListValue.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   ListValue.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   ListValue clone() => new ListValue()..mergeFromMessage(this);
+  ListValue copyWith(void Function(ListValue) updates) => super.copyWith((message) => updates(message as ListValue));
   $pb.BuilderInfo get info_ => _i;
   static ListValue create() => new ListValue();
   static $pb.PbList<ListValue> createRepeated() => new $pb.PbList<ListValue>();
-  static ListValue getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyListValue();
-    return _defaultInstance;
-  }
+  static ListValue getDefault() => _defaultInstance ??= create()..freeze();
   static ListValue _defaultInstance;
   static void $checkItem(ListValue v) {
-    if (v is! ListValue) $pb.checkItemFailed(v, 'ListValue');
+    if (v is! ListValue) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   List<Value> get values => $_getList(0);
 }
-
-class _ReadonlyListValue extends ListValue with $pb.ReadonlyMessageMixin {}
 

@@ -1,7 +1,8 @@
 ///
 //  Generated code. Do not modify.
+//  source: google/protobuf/type.proto
 ///
-// ignore_for_file: non_constant_identifier_names,library_prefixes
+// ignore_for_file: non_constant_identifier_names,library_prefixes,unused_import
 
 // ignore_for_file: UNDEFINED_SHOWN_NAME,UNUSED_SHOWN_NAME
 import 'dart:core' show int, dynamic, String, List, Map;
@@ -16,8 +17,8 @@ class Syntax extends $pb.ProtobufEnum {
     SYNTAX_PROTO3,
   ];
 
-  static final Map<int, dynamic> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static Syntax valueOf(int value) => _byValue[value] as Syntax;
+  static final Map<int, Syntax> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Syntax valueOf(int value) => _byValue[value];
   static void $checkItem(Syntax v) {
     if (v is! Syntax) $pb.checkItemFailed(v, 'Syntax');
   }
@@ -68,8 +69,8 @@ class Field_Kind extends $pb.ProtobufEnum {
     TYPE_SINT64,
   ];
 
-  static final Map<int, dynamic> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static Field_Kind valueOf(int value) => _byValue[value] as Field_Kind;
+  static final Map<int, Field_Kind> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Field_Kind valueOf(int value) => _byValue[value];
   static void $checkItem(Field_Kind v) {
     if (v is! Field_Kind) $pb.checkItemFailed(v, 'Field_Kind');
   }
@@ -90,8 +91,8 @@ class Field_Cardinality extends $pb.ProtobufEnum {
     CARDINALITY_REPEATED,
   ];
 
-  static final Map<int, dynamic> _byValue = $pb.ProtobufEnum.initByValue(values);
-  static Field_Cardinality valueOf(int value) => _byValue[value] as Field_Cardinality;
+  static final Map<int, Field_Cardinality> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Field_Cardinality valueOf(int value) => _byValue[value];
   static void $checkItem(Field_Cardinality v) {
     if (v is! Field_Cardinality) $pb.checkItemFailed(v, 'Field_Cardinality');
   }

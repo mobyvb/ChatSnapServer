@@ -1,27 +1,28 @@
 ///
 //  Generated code. Do not modify.
+//  source: google/protobuf/api.proto
 ///
-// ignore_for_file: non_constant_identifier_names,library_prefixes
+// ignore_for_file: non_constant_identifier_names,library_prefixes,unused_import
 
 // ignore: UNUSED_SHOWN_NAME
-import 'dart:core' show int, bool, double, String, List, override;
+import 'dart:core' show int, bool, double, String, List, Map, override;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'type.pb.dart';
-import 'source_context.pb.dart';
+import 'type.pb.dart' as $2;
+import 'source_context.pb.dart' as $0;
 
-import 'type.pbenum.dart';
+import 'type.pbenum.dart' as $2;
 
 class Api extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Api')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Api', package: const $pb.PackageName('google.protobuf'))
     ..aOS(1, 'name')
     ..pp<Method>(2, 'methods', $pb.PbFieldType.PM, Method.$checkItem, Method.create)
-    ..pp<Option>(3, 'options', $pb.PbFieldType.PM, Option.$checkItem, Option.create)
+    ..pp<$2.Option>(3, 'options', $pb.PbFieldType.PM, $2.Option.$checkItem, $2.Option.create)
     ..aOS(4, 'version')
-    ..a<SourceContext>(5, 'sourceContext', $pb.PbFieldType.OM, SourceContext.getDefault, SourceContext.create)
+    ..a<$0.SourceContext>(5, 'sourceContext', $pb.PbFieldType.OM, $0.SourceContext.getDefault, $0.SourceContext.create)
     ..pp<Mixin>(6, 'mixins', $pb.PbFieldType.PM, Mixin.$checkItem, Mixin.create)
-    ..e<Syntax>(7, 'syntax', $pb.PbFieldType.OE, Syntax.SYNTAX_PROTO2, Syntax.valueOf, Syntax.values)
+    ..e<$2.Syntax>(7, 'syntax', $pb.PbFieldType.OE, $2.Syntax.SYNTAX_PROTO2, $2.Syntax.valueOf, $2.Syntax.values)
     ..hasRequiredFields = false
   ;
 
@@ -29,16 +30,14 @@ class Api extends $pb.GeneratedMessage {
   Api.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Api.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Api clone() => new Api()..mergeFromMessage(this);
+  Api copyWith(void Function(Api) updates) => super.copyWith((message) => updates(message as Api));
   $pb.BuilderInfo get info_ => _i;
   static Api create() => new Api();
   static $pb.PbList<Api> createRepeated() => new $pb.PbList<Api>();
-  static Api getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyApi();
-    return _defaultInstance;
-  }
+  static Api getDefault() => _defaultInstance ??= create()..freeze();
   static Api _defaultInstance;
   static void $checkItem(Api v) {
-    if (v is! Api) $pb.checkItemFailed(v, 'Api');
+    if (v is! Api) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   String get name => $_getS(0, '');
@@ -48,37 +47,35 @@ class Api extends $pb.GeneratedMessage {
 
   List<Method> get methods => $_getList(1);
 
-  List<Option> get options => $_getList(2);
+  List<$2.Option> get options => $_getList(2);
 
   String get version => $_getS(3, '');
   set version(String v) { $_setString(3, v); }
   bool hasVersion() => $_has(3);
   void clearVersion() => clearField(4);
 
-  SourceContext get sourceContext => $_getN(4);
-  set sourceContext(SourceContext v) { setField(5, v); }
+  $0.SourceContext get sourceContext => $_getN(4);
+  set sourceContext($0.SourceContext v) { setField(5, v); }
   bool hasSourceContext() => $_has(4);
   void clearSourceContext() => clearField(5);
 
   List<Mixin> get mixins => $_getList(5);
 
-  Syntax get syntax => $_getN(6);
-  set syntax(Syntax v) { setField(7, v); }
+  $2.Syntax get syntax => $_getN(6);
+  set syntax($2.Syntax v) { setField(7, v); }
   bool hasSyntax() => $_has(6);
   void clearSyntax() => clearField(7);
 }
 
-class _ReadonlyApi extends Api with $pb.ReadonlyMessageMixin {}
-
 class Method extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Method')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Method', package: const $pb.PackageName('google.protobuf'))
     ..aOS(1, 'name')
     ..aOS(2, 'requestTypeUrl')
     ..aOB(3, 'requestStreaming')
     ..aOS(4, 'responseTypeUrl')
     ..aOB(5, 'responseStreaming')
-    ..pp<Option>(6, 'options', $pb.PbFieldType.PM, Option.$checkItem, Option.create)
-    ..e<Syntax>(7, 'syntax', $pb.PbFieldType.OE, Syntax.SYNTAX_PROTO2, Syntax.valueOf, Syntax.values)
+    ..pp<$2.Option>(6, 'options', $pb.PbFieldType.PM, $2.Option.$checkItem, $2.Option.create)
+    ..e<$2.Syntax>(7, 'syntax', $pb.PbFieldType.OE, $2.Syntax.SYNTAX_PROTO2, $2.Syntax.valueOf, $2.Syntax.values)
     ..hasRequiredFields = false
   ;
 
@@ -86,16 +83,14 @@ class Method extends $pb.GeneratedMessage {
   Method.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Method.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Method clone() => new Method()..mergeFromMessage(this);
+  Method copyWith(void Function(Method) updates) => super.copyWith((message) => updates(message as Method));
   $pb.BuilderInfo get info_ => _i;
   static Method create() => new Method();
   static $pb.PbList<Method> createRepeated() => new $pb.PbList<Method>();
-  static Method getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyMethod();
-    return _defaultInstance;
-  }
+  static Method getDefault() => _defaultInstance ??= create()..freeze();
   static Method _defaultInstance;
   static void $checkItem(Method v) {
-    if (v is! Method) $pb.checkItemFailed(v, 'Method');
+    if (v is! Method) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   String get name => $_getS(0, '');
@@ -123,18 +118,16 @@ class Method extends $pb.GeneratedMessage {
   bool hasResponseStreaming() => $_has(4);
   void clearResponseStreaming() => clearField(5);
 
-  List<Option> get options => $_getList(5);
+  List<$2.Option> get options => $_getList(5);
 
-  Syntax get syntax => $_getN(6);
-  set syntax(Syntax v) { setField(7, v); }
+  $2.Syntax get syntax => $_getN(6);
+  set syntax($2.Syntax v) { setField(7, v); }
   bool hasSyntax() => $_has(6);
   void clearSyntax() => clearField(7);
 }
 
-class _ReadonlyMethod extends Method with $pb.ReadonlyMessageMixin {}
-
 class Mixin extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Mixin')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Mixin', package: const $pb.PackageName('google.protobuf'))
     ..aOS(1, 'name')
     ..aOS(2, 'root')
     ..hasRequiredFields = false
@@ -144,16 +137,14 @@ class Mixin extends $pb.GeneratedMessage {
   Mixin.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Mixin.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Mixin clone() => new Mixin()..mergeFromMessage(this);
+  Mixin copyWith(void Function(Mixin) updates) => super.copyWith((message) => updates(message as Mixin));
   $pb.BuilderInfo get info_ => _i;
   static Mixin create() => new Mixin();
   static $pb.PbList<Mixin> createRepeated() => new $pb.PbList<Mixin>();
-  static Mixin getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyMixin();
-    return _defaultInstance;
-  }
+  static Mixin getDefault() => _defaultInstance ??= create()..freeze();
   static Mixin _defaultInstance;
   static void $checkItem(Mixin v) {
-    if (v is! Mixin) $pb.checkItemFailed(v, 'Mixin');
+    if (v is! Mixin) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   String get name => $_getS(0, '');
@@ -166,6 +157,4 @@ class Mixin extends $pb.GeneratedMessage {
   bool hasRoot() => $_has(1);
   void clearRoot() => clearField(2);
 }
-
-class _ReadonlyMixin extends Mixin with $pb.ReadonlyMessageMixin {}
 

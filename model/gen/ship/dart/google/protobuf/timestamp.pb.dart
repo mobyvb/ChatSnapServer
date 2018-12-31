@@ -1,16 +1,17 @@
 ///
 //  Generated code. Do not modify.
+//  source: google/protobuf/timestamp.proto
 ///
-// ignore_for_file: non_constant_identifier_names,library_prefixes
+// ignore_for_file: non_constant_identifier_names,library_prefixes,unused_import
 
 // ignore: UNUSED_SHOWN_NAME
-import 'dart:core' show int, bool, double, String, List, override;
+import 'dart:core' show int, bool, double, String, List, Map, override;
 
 import 'package:fixnum/fixnum.dart';
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class Timestamp extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Timestamp')
+  static final $pb.BuilderInfo _i = new $pb.BuilderInfo('Timestamp', package: const $pb.PackageName('google.protobuf'))
     ..aInt64(1, 'seconds')
     ..a<int>(2, 'nanos', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -20,16 +21,14 @@ class Timestamp extends $pb.GeneratedMessage {
   Timestamp.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Timestamp.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
   Timestamp clone() => new Timestamp()..mergeFromMessage(this);
+  Timestamp copyWith(void Function(Timestamp) updates) => super.copyWith((message) => updates(message as Timestamp));
   $pb.BuilderInfo get info_ => _i;
   static Timestamp create() => new Timestamp();
   static $pb.PbList<Timestamp> createRepeated() => new $pb.PbList<Timestamp>();
-  static Timestamp getDefault() {
-    if (_defaultInstance == null) _defaultInstance = new _ReadonlyTimestamp();
-    return _defaultInstance;
-  }
+  static Timestamp getDefault() => _defaultInstance ??= create()..freeze();
   static Timestamp _defaultInstance;
   static void $checkItem(Timestamp v) {
-    if (v is! Timestamp) $pb.checkItemFailed(v, 'Timestamp');
+    if (v is! Timestamp) $pb.checkItemFailed(v, _i.qualifiedMessageName);
   }
 
   Int64 get seconds => $_getI64(0);
@@ -42,6 +41,4 @@ class Timestamp extends $pb.GeneratedMessage {
   bool hasNanos() => $_has(1);
   void clearNanos() => clearField(2);
 }
-
-class _ReadonlyTimestamp extends Timestamp with $pb.ReadonlyMessageMixin {}
 
