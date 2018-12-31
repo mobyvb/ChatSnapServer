@@ -2,12 +2,14 @@ syntax = "proto3";
 
 package model;
 
-import "google/protobuf/Empty.proto";
-
 service HelloService{
-    rpc SayHello(google.protobuf.Empty) returns (ResponseHello){}
+    rpc SayHello(HelloRequest) returns (HelloResponse){}
 }
 
-message ResponseHello{
+message HelloRequest{
+    string request = 1;
+}
+
+message HelloResponse{
     string response = 1;
 }
