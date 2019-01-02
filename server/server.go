@@ -5,8 +5,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/golang/protobuf/ptypes/empty"
-	model "github.com/ishaanbahal/hello-grpc/model/gen"
+	model "github.com/mobyvb/ChatSnapServer/model/gen"
 	"google.golang.org/grpc"
 )
 
@@ -30,6 +29,6 @@ func newHelloSever() *helloServiceServer {
 // HelloService handler
 type helloServiceServer struct{}
 
-func (s *helloServiceServer) SayHello(ctx context.Context, req *empty.Empty) (*model.ResponseHello, error) {
-	return &model.ResponseHello{Response: "Hello you!"}, nil
+func (s *helloServiceServer) SayHello(ctx context.Context, req *model.HelloRequest) (*model.HelloResponse, error) {
+	return &model.HelloResponse{Response: "Hello you!"}, nil
 }
